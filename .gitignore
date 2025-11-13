@@ -1,0 +1,66 @@
+# Tailoring Management System - Git Ignore
+
+# Logs
+logs/*.log
+*.log
+
+# Database
+*.sql.backup
+*.sql.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Package files
+*.zip
+*.tar.gz
+deployment_package/
+
+# Configuration (if sensitive)
+# config/db_config.php
+
+# Test files
+check_login.php
+check.html
+test.php
+reset_password.php
+fix_passwords.sql
+
+# Documentation (optional - uncomment if not needed in repo)
+# *.md
+# !README.md
+
+# Environment files
+.env
+.env.local
+
+# Node modules (if any)
+node_modules/
+
+# Composer (if any)
+vendor/
+composer.lock
+
+# Backup files
+*.bak
+*.backup
+*_backup.sql
+

@@ -1,0 +1,3 @@
+# This file ensures the logs directory is tracked by git
+# Log files are not tracked, only the directory structure
+

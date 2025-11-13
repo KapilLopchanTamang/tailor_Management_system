@@ -1,0 +1,50 @@
+# robots.txt for Tailoring Management System
+# This file tells search engines which pages they can and cannot access
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /staff/
+Disallow: /customer/
+Disallow: /api/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /tests/
+Disallow: /uploads/
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.ini$
+Disallow: /*.env$
+
+# Allow public pages
+Allow: /index.php
+Allow: /login.php
+Allow: /register.php
+Allow: /forgot_password.php
+Allow: /404.php
+Allow: /500.php
+
+# Sitemap location
+Sitemap: http://localhost/TMS/sitemap.xml
+
+# Crawl delay (optional - adjust based on server capacity)
+# Crawl-delay: 10
+
+# Specific bot rules (optional)
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /staff/
+Disallow: /customer/
+Disallow: /api/
+Disallow: /config/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /staff/
+Disallow: /customer/
+Disallow: /api/
+Disallow: /config/
+
