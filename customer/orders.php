@@ -214,6 +214,7 @@ include __DIR__ . '/../includes/header.php';
             <div class="card-body">
                 <form method="POST" id="newOrderForm">
                     <input type="hidden" name="place_order" value="1">
+                    <input type="hidden" id="orderItemsInput">
                     <?php echo csrfField(); ?>
                     
                     <div class="mb-3">
@@ -508,7 +509,10 @@ function updateSelectedItems() {
     selectedDiv.innerHTML = html;
     
     // Update hidden input for form submission
-    document.getElementById('orderItemsInput').value = JSON.stringify(selectedItems);
+    const itemsInput = document.getElementById('orderItemsInput');
+    if (itemsInput) {
+        itemsInput.value = JSON.stringify(selectedItems);
+    }
 }
 
 function updateOrderTotal() {
